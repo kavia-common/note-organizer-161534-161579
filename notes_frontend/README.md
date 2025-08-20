@@ -1,75 +1,50 @@
-# Nuxt Minimal Starter
+# Notes Frontend (Nuxt 3)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A modern, light-themed notes application with:
+- User authentication (localStorage demo auth)
+- Create, edit, delete notes
+- List and search notes
+- Sidebar layout with main editing area
+- Pin/unpin notes
 
-## Setup
+This project uses Nuxt 3 + Pinia.
 
-Make sure to install dependencies:
+## Getting Started
+
+Install dependencies:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+# or yarn install / pnpm install / bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Run dev server:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+# http://localhost:3000
 ```
 
-## Production
-
-Build the application for production:
+Build:
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+Preview:
 
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Notes
+
+- Auth and data are stored in `localStorage` for demonstration purposes and to avoid backend coupling.
+- Replace `utils/api.ts` with real API calls when a backend is available.
+
+## Structure
+
+- `components/` layout, editor, list items, icons
+- `pages/` auth pages, index, notes routes
+- `stores/` Pinia stores for auth and notes
+- `assets/styles.css` theme tokens and global styles
